@@ -36,8 +36,14 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="font-bold text-2xl text-blue-600">
-            LaundryDesign
+          <Link 
+            href="/" 
+            className={`font-calibri text-2xl transition-colors ${
+              isScrolled ? "text-gray-900" : "text-white"
+            }`}
+            style={{ fontWeight: 300 }}
+          >
+            Wholesome Design Factory
           </Link>
 
           {/* Desktop Navigation */}
@@ -61,7 +67,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-gray-600"
+            className={`md:hidden p-2 ${isScrolled ? "text-gray-900" : "text-white"}`}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

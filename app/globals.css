@@ -9,8 +9,13 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
   body {
-    @apply text-base leading-relaxed;
+    @apply font-calibri font-thin text-base leading-relaxed;
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(
       to bottom,
@@ -20,11 +25,11 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-open-sans font-medium leading-tight;
+    @apply font-calibri font-thin leading-tight;
   }
   
   p {
-    @apply font-sans;
+    @apply font-calibri font-thin;
   }
 }
 
@@ -44,11 +49,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
 }
 
 * {

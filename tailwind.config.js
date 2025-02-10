@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Open Sans', 'Calibri', 'system-ui', 'sans-serif'],
+        sans: ['Calibri', 'system-ui', 'sans-serif'],
         calibri: ['Calibri', 'system-ui', 'sans-serif'],
-        'open-sans': ['Open Sans', 'system-ui', 'sans-serif'],
       },
       fontWeight: {
+        thin: 300,
         normal: 400,
         medium: 500,
         semibold: 600,
