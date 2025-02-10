@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
-    domains: ['placehold.co'],
+    unoptimized: true,
   },
+  basePath: '/hearthandhamper',
+  assetPrefix: '/hearthandhamper/',
 }
 
 module.exports = nextConfig 
