@@ -1,4 +1,4 @@
-# LaundryDesign Agency Website
+# Wholesome Design Factory Website
 
 A modern website for a laundromat web design agency built with Next.js, TypeScript, and Tailwind CSS.
 
@@ -24,12 +24,12 @@ A modern website for a laundromat web design agency built with Next.js, TypeScri
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/laundry-design-agency.git
+git clone https://github.com/yourusername/wholesome-design-factory.git
 ```
 
 2. Install dependencies:
 ```bash
-cd laundry-design-agency
+cd wholesome-design-factory
 npm install
 ```
 

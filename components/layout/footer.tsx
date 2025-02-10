@@ -40,7 +40,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/" className="text-2xl font-bold text-white mb-4 block">
-              LaundryDesign
+              Wholesome Design Factory
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
               We create stunning digital experiences for laundromats that convert visitors into customers. Transform your business with our modern web solutions.
@@ -133,7 +133,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} LaundryDesign. All rights reserved.
+            © {new Date().getFullYear()} Wholesome Design Factory. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="text-gray-400 hover:text-white text-sm">
