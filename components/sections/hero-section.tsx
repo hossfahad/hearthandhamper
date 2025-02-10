@@ -26,7 +26,7 @@ export function HeroSection(): JSX.Element {
           className="absolute w-full h-full object-cover"
           style={{ filter: "brightness(0.8)" }}
         >
-          <source src="/videos/Hero Image.mp4" type="video/mp4" />
+          <source src="/hearthandhamper/videos/hero-image.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
