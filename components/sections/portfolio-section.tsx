@@ -5,40 +5,22 @@ import Image from "next/image"
 
 const portfolioItems = [
   {
-    title: "Fresh & Clean Laundromat",
-    description: "Modern website redesign with online booking system",
-    image: "/portfolio/fresh-clean.webp",
+    title: "Example 1",
+    description: "Modern website design for local laundromat",
+    image: "/features/Example 1.jpg",
     category: "Website Design"
   },
   {
-    title: "Bubble Express",
-    description: "Full rebrand and digital transformation",
-    image: "/portfolio/bubble-express.webp",
-    category: "Branding"
+    title: "Example 2",
+    description: "Clean and professional web presence",
+    image: "/features/Example 2.jpg",
+    category: "Website Design"
   },
   {
-    title: "Wash & Fold Co.",
-    description: "E-commerce integration for delivery service",
-    image: "/portfolio/wash-fold.webp",
-    category: "E-commerce"
-  },
-  {
-    title: "SpinCycle Solutions",
-    description: "Mobile app development for chain locations",
-    image: "/portfolio/spin-cycle.webp",
-    category: "Mobile App"
-  },
-  {
-    title: "The Laundry Room",
-    description: "SEO optimization and content strategy",
-    image: "/portfolio/laundry-room.webp",
-    category: "Marketing"
-  },
-  {
-    title: "Clean Slate Services",
-    description: "Customer loyalty program implementation",
-    image: "/portfolio/clean-slate.webp",
-    category: "Development"
+    title: "Example 3",
+    description: "User-friendly laundromat website",
+    image: "/features/Example 4.jpg",
+    category: "Website Design"
   }
 ]
 
@@ -90,18 +72,6 @@ export function PortfolioSection(): JSX.Element {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-12"
-        >
-          <button className="px-8 py-4 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors">
-            View All Projects
-          </button>
-        </motion.div>
       </div>
     </section>
   )

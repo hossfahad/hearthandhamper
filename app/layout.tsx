@@ -5,7 +5,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Wholesome Design Factory - Modern Web Solutions for Community Businesses",
-  description: "We create stunning digital experiences for small businesses that convert visitors into customers.",
+  description: "We create stunning digital experiences for small businesses that help you get an online presence and more customers.",
   keywords: "laundromat web design, laundry website design, wholesome design factory, digital solutions",
 }
 

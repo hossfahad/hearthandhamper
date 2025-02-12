@@ -5,7 +5,7 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Starter",
+    name: "Website",
     price: "$249",
     description: "Perfect for new laundromats getting started online",
     features: [
@@ -14,36 +14,24 @@ const plans = [
       "Business Hours & Location",
       "Equipment List",
       "Contact Form",
-      "Basic SEO Setup"
+      "Basic SEO Setup so you can be found online",
+      "Website Hosting for the first year"
     ]
   },
   {
-    name: "Growth",
-    price: "$499",
-    description: "For laundromats ready to expand their digital presence",
+    name: "Website + Maintainence",
+    price: "$249 + $30/mo",
+    description: "Set and Forget plan so you can focus on running your business.",
     features: [
       "Everything in Starter",
-      "Online Booking System",
+      "Monthly Blog Posts and Social Media Updates",
       "Customer Reviews Integration",
       "Social Media Integration",
       "Google Analytics Setup",
-      "Monthly Performance Report"
+      "Monthly Reporting so you can see the progress"
     ],
     popular: true
   },
-  {
-    name: "Enterprise",
-    price: "$999",
-    description: "Complete digital solution for multi-location businesses",
-    features: [
-      "Everything in Growth",
-      "Multi-location Support",
-      "Custom Mobile App",
-      "Loyalty Program",
-      "Advanced Analytics",
-      "Priority Support"
-    ]
-  }
 ]
 
 const container = {
@@ -73,10 +61,10 @@ export function PricingSection(): JSX.Element {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Simple, Transparent Pricing
+            Simple and Honest Pricing
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Choose the perfect plan for your laundromat's needs
+            We understand the cost of a local business. We offer a simple and honest pricing structure that is easy to understand and easy to afford.
           </p>
         </motion.div>
 
@@ -85,7 +73,7 @@ export function PricingSection(): JSX.Element {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto"
         >
           {plans.map((plan, index) => (
             <motion.div
@@ -111,7 +99,7 @@ export function PricingSection(): JSX.Element {
                   <span className="text-4xl font-bold text-gray-900">
                     {plan.price}
                   </span>
-                  {plan.name !== "Enterprise" && (
+                  {plan.name === "Website" && (
                     <span className="text-gray-600 ml-1">/one-time</span>
                   )}
                 </div>

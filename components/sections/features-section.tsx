@@ -7,20 +7,14 @@ const features = [
   {
     title: "Beautiful Website Templates",
     description: "Choose from our collection of professionally designed templates made specifically for laundromats. Each template is fully customizable to match your brand.",
-    image: "/features/templates.webp",
-    imageAlt: "Laundromat website templates showcase"
+    image: "/features/Example 1.jpg",
+    imageAlt: "Modern laundromat website design with washing machines and clean interface"
   },
   {
-    title: "Online Booking System",
-    description: "Let customers reserve machines, schedule drop-off service, and manage their laundry needs online. Reduce wait times and improve customer satisfaction.",
-    image: "/features/booking.webp",
-    imageAlt: "Online booking system interface"
-  },
-  {
-    title: "Real-Time Updates",
-    description: "Keep your customers informed with real-time machine availability, wait times, and service updates. Build trust through transparency.",
-    image: "/features/updates.webp",
-    imageAlt: "Real-time updates dashboard"
+    title: "Email & Social Media Integration",
+    description: "Connect with your customers through integrated email forms and social media links. Make it easy for customers to reach you and stay updated with your business.",
+    image: "/features/Example 2.jpg",
+    imageAlt: "Email and social media integration interface"
   }
 ]
 
@@ -56,12 +50,14 @@ export function FeaturesSection(): JSX.Element {
               } items-center gap-12`}
             >
               <div className="flex-1">
-                <div className="relative aspect-video overflow-hidden rounded-2xl shadow-2xl">
+                <div className="relative w-full h-[400px] overflow-hidden rounded-2xl shadow-2xl">
                   <Image
                     src={feature.image}
                     alt={feature.imageAlt}
                     fill
-                    className="object-cover"
+                    priority={index === 0}
+                    className="object-cover object-center"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               </div>
@@ -84,15 +80,6 @@ export function FeaturesSection(): JSX.Element {
                 >
                   {feature.description}
                 </motion.p>
-                <motion.button
-                  initial={{ opacity: 0, x: index % 2 === 0 ? 40 : -40 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
-                  className="px-8 py-4 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors"
-                >
-                  Learn More
-                </motion.button>
               </div>
             </motion.div>
           ))}

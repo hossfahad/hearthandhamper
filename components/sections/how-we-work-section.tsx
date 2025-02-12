@@ -14,7 +14,7 @@ const steps: ProcessStep[] = [
   {
     icon: PhoneCall,
     title: "Initial Consultation",
-    description: "We'll discuss your needs, budget, and timeline to create the perfect plan for your laundromat."
+    description: "We'll discuss your needs. You can provide us the information you would like to put in for the perfect website for design."
   },
   {
     icon: Paintbrush,
@@ -48,9 +48,9 @@ const item = {
   show: { opacity: 1, x: 0 }
 };
 
-export function ProcessSection(): JSX.Element {
+export function HowWeWorkSection(): JSX.Element {
   return (
-    <section id="process" className="py-20 bg-white">
+    <section id="how-we-work" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

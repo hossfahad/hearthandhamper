@@ -12,10 +12,30 @@ export function ContactSection() {
     message: ""
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log(formState)
+    try {
+      // Send email to hoss.fahad@gmail.com
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formState,
+          to: 'hoss.fahad@gmail.com'
+        }),
+      })
+      
+      if (response.ok) {
+        alert('Message sent successfully!')
+        setFormState({ name: "", email: "", phone: "", message: "" })
+      } else {
+        alert('Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      alert('Failed to send message. Please try again.')
+    }
   }
 
   return (
@@ -121,8 +141,8 @@ export function ContactSection() {
                   <Mail className="w-6 h-6 text-blue-600 mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium text-gray-900">Email</h4>
-                    <a href="mailto:hello@wholesomedesignfactory.com" className="text-gray-600 hover:text-blue-600 transition-colors">
-                      hello@wholesomedesignfactory.com
+                    <a href="mailto:hoss.fahad@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors">
+                      hoss.fahad@gmail.com
                     </a>
                   </div>
                 </div>

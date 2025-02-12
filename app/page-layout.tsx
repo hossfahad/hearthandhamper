@@ -6,7 +6,7 @@ import { FeaturesSection } from "@/components/sections/features-section"
 import { PortfolioSection } from "@/components/sections/portfolio-section"
 import { TestimonialsSection } from "@/components/sections/testimonials-section"
 import { PricingSection } from "@/components/sections/pricing-section"
-import { ProcessSection } from "@/components/sections/process-section"
+import { HowWeWorkSection } from "@/components/sections/how-we-work-section"
 import { ContactSection } from "@/components/sections/contact-section"
 
 export function PageLayout(): JSX.Element {
@@ -18,7 +18,7 @@ export function PageLayout(): JSX.Element {
       <PortfolioSection />
       <TestimonialsSection />
       <PricingSection />
-      <ProcessSection />
+      <HowWeWorkSection />
       <ContactSection />
     </main>
   )
